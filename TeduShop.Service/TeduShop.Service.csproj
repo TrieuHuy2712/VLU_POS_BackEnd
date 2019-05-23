@@ -66,6 +66,7 @@
     <Compile Include="ErrorService.cs" />
     <Compile Include="FeedbackService.cs" />
     <Compile Include="FunctionService.cs" />
+    <Compile Include="HeadStatisticService.cs" />
     <Compile Include="OrderBackupService.cs" />
     <Compile Include="OrderService.cs" />
     <Compile Include="PageService.cs" />

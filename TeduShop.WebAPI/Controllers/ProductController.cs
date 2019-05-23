@@ -91,7 +91,7 @@ namespace TeduShop.Web.Controllers
                 var model = _productService.GetAll(categoryId, keyword);
 
                 totalRow = model.Count();
-                var query = model.OrderByDescending(x => x.CreatedDate).Skip(page - 1 * pageSize).Take(pageSize).ToList();
+                var query = model.OrderByDescending(x => x.CreatedDate).Skip((page - 1) * pageSize).Take(pageSize).ToList();
 
                 var responseData = Mapper.Map<List<Product>, List<ProductViewModel>>(query);
 
